@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Hexo+Github搭建博客</title>
+      <link href="/2023/10/05/Hexo+Github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+      <url>/2023/10/05/Hexo+Github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Hexo准备"><a href="#Hexo准备" class="headerlink" title="Hexo准备"></a>Hexo准备</h1><h2 id="下载安装Git"><a href="#下载安装Git" class="headerlink" title="下载安装Git"></a>下载安装Git</h2><p><a href="https://git-scm.com/">Git官网</a></p><p><img src="https://baiyu1.oss-cn-hangzhou.aliyuncs.com/image-20231005181750836.png" alt="image-20231005181750836"></p><p>下载电脑对应的版本（科学上网下载会比较快一点）</p><p><img src="https://baiyu1.oss-cn-hangzhou.aliyuncs.com/image-20231005182155045.png" alt="image-20231005182155045"></p><p>一直点next，默认安装就可以了。</p><p><img src="https://baiyu1.oss-cn-hangzhou.aliyuncs.com/image-20231005182556135.png" alt="image-20231005182556135"></p><p>出现“Open Git GUI here” 和“Open Git Bash here”这两个选项就代表安装成功了</p><blockquote><p><em>“Open Git Bash here”是我们经常用到的一个命令</em></p></blockquote><h2 id="下载安装Node-js"><a href="#下载安装Node-js" class="headerlink" title="下载安装Node.js"></a>下载安装Node.js</h2><p><a href="https://nodejs.org/zh-cn">Node.js官网</a></p><p>Hexo是依赖于Node.Js上的一个博客框架，Hexo 通过Node.Js渲染将Markdown转化成HTML文件，这样我们就可以直接将这些HTML文件推送到GitHub pages 上来托管我们的静态博客。</p><p><img src="https://baiyu1.oss-cn-hangzhou.aliyuncs.com/image-20231005183729050.png" alt="image-20231005183729050"></p><p>建议直接安装长期维护版，比较稳定。</p><p><img src="https://baiyu1.oss-cn-hangzhou.aliyuncs.com/image-20231005183947929.png" alt="image-20231005183947929"></p><p>一直按Next 就可以了（默认的就好）</p><p><img src="https://baiyu1.oss-cn-hangzhou.aliyuncs.com/image-20231005184216104.png" alt="image-20231005184216104"></p><p>打开cmd（命令提示符）窗口，输入<code>node -v</code>然后回车。</p><p><img src="https://baiyu1.oss-cn-hangzhou.aliyuncs.com/image-20231005184430893.png" alt="image-20231005184430893"></p><p>出现版本号便是安装成功了</p><h2 id="Hexo官网"><a href="#Hexo官网" class="headerlink" title="Hexo官网"></a>Hexo官网</h2><p><a href="https://hexo.io/zh-cn/index.html">hexo官网</a></p><p>现在准备安装hexo </p><ol><li><p>新建文件夹用于存放Hexo的文件（以后的博客也会存在这里面）</p><p>打开新建Blog文件夹，右键使用“Open Git Bash here”命令打开窗口（红线的便是我们文件的地址位置）</p></li></ol><p><img src="https://baiyu1.oss-cn-hangzhou.aliyuncs.com/image-20231005184906203.png" alt="image-20231005184906203"></p><ol start="2"><li>打开Hexo官网</li></ol><p><img src="https://baiyu1.oss-cn-hangzhou.aliyuncs.com/image-20231005185317386.png" alt="image-20231005185317386"><img src="https://baiyu1.oss-cn-hangzhou.aliyuncs.com/image-20231005185412533.png" alt="image-20231005185412533"></p><ol start="3"><li>分别复制以上代码放在“Open Git Bash here”命令窗口中，每一行进行一次回车命令。</li></ol><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g（这行代码表示安装hexo软件）</span><br><span class="line">hexo init blog（这行代码表示初始化博客系统，即在hexo文件夹中放入blog相关文件）</span><br><span class="line">cd blog（进入blog目录）</span><br><span class="line">npm install（安装项目依赖包(第三方nodejs类库或工具)）</span><br><span class="line">hexo server（启动博客程序，可以缩写成&quot;hexo s&quot;，可以得到一个本地化的地址）</span><br></pre></td></tr></table></figure><ol start="4"><li>软件生成了本地的博客网址（红色方框的地址），在浏览器中打开即可以看见我们本地的博客。</li></ol><p><img src="https://baiyu1.oss-cn-hangzhou.aliyuncs.com/image-20231005191436487.png" alt="image-20231005191436487"></p><ol start="5"><li>基础本地化配置完成。</li></ol><blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># npm是nodejs 的包管理工具，sudo是linux或unix下将命令以管理员身份运行，install 为npm子命令用于安装工具包或项目依赖</span></span><br><span class="line"><span class="comment"># -g为全局安装，安装一次后，在命令行中处于任何目录位置都能使用，如果不带-g 工具包被安装在当前项目的node_modules，</span></span><br><span class="line"><span class="comment"># 需要借助npx才能执行相关命令，想hexo-cli这样的命令行工具建议全局安装</span></span><br><span class="line"><span class="comment"># 这一步需要管理员权限，sudo即为以超级用户运行安装命令，linux 和mac 安装方法相同</span></span><br><span class="line"><span class="comment"># 如果是windows环境可能需要以管理员身份运行，命令行前不需要sudo</span></span><br><span class="line">sudo npm install hexo-cli -g</span><br><span class="line">  　或者</span><br><span class="line"><span class="comment"># （推荐）如果访问墙外资源较慢，可以是cnpm经过阿里的镜像安装hexo-cli命令行工具，cnpm前面的c即为china的意思，wall内专用nodejs包管理工具</span></span><br><span class="line">sudo cnpm install hexo-cli -g</span><br></pre></td></tr></table></figure></blockquote><blockquote><p>初始化目录以后是这个结构</p><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">./blog</span><br><span class="line">    ├── _config.landscape.yml</span><br><span class="line">    ├── _config.yml</span><br><span class="line">    ├── db.json</span><br><span class="line">    ├── node_modules</span><br><span class="line">    ├── <span class="keyword">package</span>.json</span><br><span class="line">    ├── <span class="keyword">package</span>-lock.json</span><br><span class="line">    ├── scaffolds</span><br><span class="line">    ├── source</span><br><span class="line">    └── themes</span><br></pre></td></tr></table></figure></blockquote><blockquote><p><strong>目录结构说明</strong></p><ul><li>package.json: 这个是nodejs要用到的，里面存放着项目信息，版本，项目所依赖的第三方nodejs工具和代码库</li><li>package-lock.json: 这个nodejs解析依赖包时会用到的</li><li>scaffolds: 博客脚手架，当你创建新的博文时可以基于其中的某个模板进行修改．</li><li>source: 源代码文件夹，这里存放你网站的内容．</li><li>themes: 主题，博客css样式，背景图片等等．</li><li>node_modules: 这里存放npm install时从网络下载下来的依赖包</li><li>config.yml 项目配置文件</li></ul></blockquote><blockquote><p><strong>配置文件详细说明</strong></p><ul><li>这里重点说明一下项目配置文件．</li><li>你可以修改项目的默认配置文件_config.yml以满足你个人的需求．比如标题，网站的描述，搜索关键字等等一些信息</li></ul><table><thead><tr><th align="center">setting</th><th align="center">chines</th><th align="center">desc</th></tr></thead><tbody><tr><td align="center">title</td><td align="center">标题</td><td align="center">你网站的标题</td></tr><tr><td align="center">subtitle</td><td align="center">子标题</td><td align="center">你网站的子标题</td></tr><tr><td align="center">description</td><td align="center">网站描述</td><td align="center">你网站的描述信息</td></tr><tr><td align="center">keywords</td><td align="center">关键字</td><td align="center">关键字</td></tr><tr><td align="center">author</td><td align="center">作者</td><td align="center">网站的作者</td></tr><tr><td align="center">language</td><td align="center">语言</td><td align="center">网站支持的语言</td></tr></tbody></table></blockquote><h2 id="编辑个人博客"><a href="#编辑个人博客" class="headerlink" title="编辑个人博客"></a>编辑个人博客</h2><ol><li>在Blog文件夹中右键打开“Open Git Bash here”（Git窗口），在窗口中输入<code>hexo new &quot;文章标题&quot;</code>回车即可得到新建的文章。文章储存位置为<code>\Hexo\blog\source\_posts</code>在“_posts”文件夹下面</li></ol><p><img src="https://baiyu1.oss-cn-hangzhou.aliyuncs.com/image-20231005192458989.png" alt="image-20231005192458989"></p><p>文章为md格式，是用markdown语法进行编辑的（可以用typora软件进行书写）</p><p><img src="https://baiyu1.oss-cn-hangzhou.aliyuncs.com/image-20231005193057580.png" alt="image-20231005193057580"></p><ol start="2"><li><p>保存文章后 在“Open Git Bash here”窗口（Git窗口）敲打命令行</p></li><li><p>运行<code>hexo g</code>加回车生成网页</p></li><li><p>运行<code>hexo s</code>加回车运行博客</p></li><li><p>在打开生成的本地博客网址，就可以发现博客已经更新了</p></li></ol><h2 id="Hexo主题使用"><a href="#Hexo主题使用" class="headerlink" title="Hexo主题使用"></a>Hexo主题使用</h2><ol><li>在Hexo主页下面有诸多主题样式可供选择，我们打开主题可进行挑选。</li></ol><p><img src="https://baiyu1.oss-cn-hangzhou.aliyuncs.com/image-20231005194204913.png" alt="image-20231005194204913"></p><p>这里我应用的主题是”butterfly”，所以以这个主题样式进行讲解。</p><ol start="2"><li>进入作者的GitHub主页，直接翻找中文的安装教程</li></ol><p><img src="https://baiyu1.oss-cn-hangzhou.aliyuncs.com/image-20231005194525986.png" alt="image-20231005194525986"></p><p>这里直接附上链接<a href="https://butterfly.js.org/posts/21cfbf15/">Butterfly 安裝文檔(一) 快速開始 | Butterfly</a></p><blockquote><p>网站是繁体中文的，但是在网站的右下角提供了中文简体字转化按钮，可以转化为中文简体。</p><p>大陆安装建议使用Gitee进行安装。</p><p>依旧是打开Git窗口将文档中提供的命令进行复制回车即可。</p><p>注意要安装文档中提供的插件才能正常运转啊。</p></blockquote><ol start="3"><li><p>安装完成后会在themes文件夹中生成butterfly文件夹<br><img src="https://baiyu1.oss-cn-hangzhou.aliyuncs.com/image-20231005195526440.png" alt="image-20231005195526440"></p></li><li><p>应用此主题要在blog文件夹中修改<code>_config.yml</code>文件。<mark>（建议先复制个副本，以免改坏了无法还原）</mark><br><img src="https://baiyu1.oss-cn-hangzhou.aliyuncs.com/image-20231005195710814.png" alt="image-20231005195710814"></p></li></ol><p>用记事本打开即可，将theme： 后面主题修改为butterfly（如果是其他主题，请按照刚刚themes文件夹中的名字进行修改）（注意：“theme:”后面要加空格“ ”再写上主题的名字）</p><p><img src="https://baiyu1.oss-cn-hangzhou.aliyuncs.com/image-20231005200012213.png" alt="image-20231005200012213"></p><ol start="5"><li>保存文件修改后 在“Open Git Bash here”窗口（Git窗口）敲打命令行</li><li>运行<code>hexo g</code>加回车生成网页</li><li>运行<code>hexo s</code>加回车运行博客</li><li>出现报错就关闭Git窗口（可以直接Ctrl C）、浏览器窗口</li></ol><h2 id="Hexo主题修改"><a href="#Hexo主题修改" class="headerlink" title="Hexo主题修改"></a>Hexo主题修改</h2><p>每个主题都有相应的修改配置说明文档，这里直接贴一个官方的网址</p><p><a href="https://butterfly.js.org/posts/4aa8abbe/">Butterfly 安裝文檔(三) 主題配置-1 | Butterfly</a></p><p>再贴一个大佬的魔改网址</p><p><a href="https://www.fomal.cc/posts/3451f874.html">Hexo博客搭建基础教程(三) | Fomalhaut🥝</a></p><p>这里贴一个Hexo网站的配置修改文档</p><p><a href="https://hexo.io/zh-cn/docs/configuration">配置 | Hexo</a></p><h1 id="Github准备"><a href="#Github准备" class="headerlink" title="Github准备"></a>Github准备</h1><p><a href="https://github.com/">Github官网</a></p><h2 id="注册账号，进行创建仓库"><a href="#注册账号，进行创建仓库" class="headerlink" title="注册账号，进行创建仓库"></a>注册账号，进行创建仓库</h2><p><img src="https://baiyu1.oss-cn-hangzhou.aliyuncs.com/image-20231005202118328.png" alt="image-20231005202118328"></p><p>利用GitHub Pages设置属于自己的个人网页</p><p><img src="https://baiyu1.oss-cn-hangzhou.aliyuncs.com/image-20231005211746367.png" alt="image-20231005211746367"></p><h2 id="在GitHub上添加SSH密钥"><a href="#在GitHub上添加SSH密钥" class="headerlink" title="在GitHub上添加SSH密钥"></a>在GitHub上添加SSH密钥</h2><p>打开Git窗口</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">**配置用户名和邮箱**</span><br><span class="line"></span><br><span class="line">- 输入 git config --global user.name &quot;GitHub用户名&quot;回车运行</span><br><span class="line">- 输入 git config --global user.email &quot;GitHub邮箱&quot;回车运行</span><br><span class="line"></span><br><span class="line">**生成ssh-key**</span><br><span class="line"></span><br><span class="line">- 输入 ssh-keygen -t rsa -C &quot;GitHub邮箱&quot;回车运行</span><br><span class="line">（在本地生成私钥`C:\Users\Admin\.ssh\id_rsa.pub`,用记事本打开并复制内容，粘贴到下图所示的GitHub ssh key当中）</span><br><span class="line"></span><br><span class="line">**验证**</span><br><span class="line"></span><br><span class="line">- 输入 ssh -T git@github.com回车运行</span><br><span class="line">（输入yes进行回车确认,最后会返回成功认证的结果）</span><br></pre></td></tr></table></figure><p>在GitHub上找到设置添加SSH密钥</p><p><img src="https://baiyu1.oss-cn-hangzhou.aliyuncs.com/image-20231005202514868.png" alt="image-20231005202514868"></p><p><img src="https://baiyu1.oss-cn-hangzhou.aliyuncs.com/image-20231005202705110.png" alt="image-20231005202705110"></p><p>打开刚刚创建的仓库复制SSH链接</p><p><img src="https://baiyu1.oss-cn-hangzhou.aliyuncs.com/image-20231005204605856.png" alt="image-20231005204605856"></p><h1 id="博客上传至Github"><a href="#博客上传至Github" class="headerlink" title="博客上传至Github"></a>博客上传至Github</h1><ol><li>用sublime text软件打开blog目录下的_config.yml文件</li></ol><blockquote><p>记事本软件也是可以的，这个软件更方便一些，当然其他类似软件也是可以的</p><p><a href="http://www.sublimetext.com/">Sublime Text软件官网</a>，直接一直点下一步默认安装就可以了。</p></blockquote><ol start="2"><li><p>这里可以更改网页标题之类的<br><img src="https://baiyu1.oss-cn-hangzhou.aliyuncs.com/image-20231005210012366.png" alt="image-20231005210012366"></p></li><li><p>这里是关键，填上SSH地址。<br><img src="https://baiyu1.oss-cn-hangzhou.aliyuncs.com/image-20231005210331615.png" alt="image-20231005210331615"></p></li><li><p>填上自己的网址（GitHub仓库名)。</p><p><img src="https://baiyu1.oss-cn-hangzhou.aliyuncs.com/image-20231005210919840.png" alt="image-20231005210919840"></p></li><li><p>保存文件修改后 在“Open Git Bash here”窗口（Git窗口）敲打命令行</p></li><li><p>运行<code>nmp install hexo-deployer-git --save</code>回车将安装博客部署插件</p></li><li><p>运行<code>hexo g</code>加回车生成网页</p></li><li><p>运行<code>hexo s</code>加回车运行博客，预览博客</p></li><li><p>运行<code>hexo d</code>加回车部署博客</p></li></ol><p><strong>end</strong></p><p><strong>附加上官方配置文档<a href="https://hexo.io/zh-cn/docs/github-pages">在 GitHub Pages 上部署 Hexo | Hexo</a></strong></p><h1 id="Get指令"><a href="#Get指令" class="headerlink" title="Get指令"></a>Get指令</h1><p>新写一篇文章</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new “文章名称”</span><br></pre></td></tr></table></figure><p>清除缓存</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure><p>清除缓存文件 (<code>db.json</code>) 和已生成的静态文件 (<code>public</code>)。</p><p>在某些情况（尤其是更换主题后），如果发现对站点的更改无论如何也不生效，可能需要运行该命令。</p><p>网页生成指令</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure><p><em>g是generate的缩写</em></p><p>网页服务指令（生成本地网页，预览网页）</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure><p>将网页上传到GitHub</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure><p><em>d是deploy的缩写</em></p><p>停止前台服务</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ctrl c</span><br></pre></td></tr></table></figure><p><strong>附加官方指令文档<a href="https://hexo.io/zh-cn/docs/commands.html">指令 | Hexo</a></strong></p><blockquote><p>注意：文章为覆盖式上传，本地没有博客文件的话，上传成功后也没有博客文章。因此，更换电脑时候一定要做好文章的备份。</p></blockquote>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>markdown语法</title>
       <link href="/2023/10/05/markdown%E8%AF%AD%E6%B3%95/"/>
       <url>/2023/10/05/markdown%E8%AF%AD%E6%B3%95/</url>
@@ -59,31 +78,9 @@
     
     
     <entry>
-      <title>电影</title>
-      <link href="/movies/index.html"/>
-      <url>/movies/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>关于</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>音乐</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -106,6 +103,28 @@
       <title>音乐</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>音乐</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>电影</title>
+      <link href="/movies/index.html"/>
+      <url>/movies/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
