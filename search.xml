@@ -4,6 +4,32 @@
   
     
     <entry>
+      <title>上网</title>
+      <link href="/2023/10/06/%E4%B8%8A%E7%BD%91/"/>
+      <url>/2023/10/06/%E4%B8%8A%E7%BD%91/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>声明：仅用作研究使用，不可违反国家政策，传播不良信息</p></blockquote><h3 id="软件："><a href="#软件：" class="headerlink" title="软件："></a>软件：</h3><p>Clash for Windows官网 <a href="https://docs.cfw.lbyczf.com/">Clash for Windows</a></p><p>Surfboard官网 <a href="https://github.com/getsurfboard/surfboard/releases">surfboard (github.com)</a></p><p>Shadowsocks官网 <a href="https://github.com/shadowsocks/shadowsocks-windows">shadowsocks&#x2F;shadowsocks-windows: A C# port of shadowsocks (github.com)</a></p><p>v2ray官网 <a href="https://www.v2ray.com/chapter_00/install.html">v2ray</a></p><p>VPN</p><p><em>可以先下载“xx加速器”领取免费时长，然后利用谷歌搜索相关教程以及软件</em></p><h3 id="插件："><a href="#插件：" class="headerlink" title="插件："></a>插件：</h3><p>IGG谷歌学术助手Edge插件<a href="https://microsoftedge.microsoft.com/addons/detail/igg%E8%B0%B7%E6%AD%8C%E5%AD%A6%E6%9C%AF%E5%8A%A9%E6%89%8B/mchibleoefileemjfghfejaggonplmmg">iGG谷歌学术助手 - Microsoft Edge Addons</a>官方文档 <a href="https://iguge.xyz/">iGuge Helper</a></p><p>可以在Edge中<a href="https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home">Microsoft Edge 加载项</a>进行关键词搜索</p><h3 id="机场："><a href="#机场：" class="headerlink" title="机场："></a>机场：</h3><p>一分机场</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>3ds Max学习笔记</title>
+      <link href="/2023/10/06/3ds%20Max%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <url>/2023/10/06/3ds%20Max%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<h1 id="3ds-Max安装"><a href="#3ds-Max安装" class="headerlink" title="3ds Max安装"></a>3ds Max安装</h1><p>推荐软仓网站下载，版本为2016版</p><p><a href="https://ruancang.net/#/?page=0&id=3&_=1696584952814">软仓丨RuanCang.Net</a></p><h2 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h2><p>1.鼠标右击【3ds Max2016(64bit)】压缩包选择【解压到 3ds Max2016(64bit)】。</p><p>2.打开解压后的文件夹，鼠标右击【AAutodesk_3ds_Max_2016_EFGJKS_Win_64bit_dlm_001_002.sfx】选择【以管理员身份运行】。</p><p>3.点击【确定】（可点击“更改”选择目标文件夹的路径，注意目标文件夹的路径不能有中文，软件安装完成后可删除此文件夹）。</p><p>4.等待安装包解压完成。</p><p>5.点击【安装】。</p><p>6.选择【我接受】，点击【下一步】。</p><p>7.许可类型选择【单机版】，输入序列号【666-69696969】，输入产品密钥【128H1】，点击【下一步】。</p><p>8.点击【浏览】可更改安装位置（建议不要安装在C盘，可以在D盘或其它磁盘下新建一个“3dmax2016”文件夹。注：安装路径中不能有中文），点击【安装】。</p><p>9.软件安装中（大约需要8分钟）。</p><p>10.安装完成，点击【完成】。</p><p>11.创建桌面启动快捷方式：点击桌面左下角【开始】图标，点击【所有应用】→找到并拖动【3ds Max 2016 - Simplified Chinese】图标到电脑桌面。</p><p>12.双击桌面【3ds Max 2016 - Simplified Chinese】图标启动软件。</p><p>13.点击【我同意】。</p><p>14.点击【激活】。</p><p>15.点击右上角【X】退出。</p><p>16.点击【激活】。</p><p>17.选择【我具有Autodesk提供的激活码】（不要关闭此界面）。</p><p>18.打开安装包解压后的【3ds Max2016(64bit)】文件夹，鼠标右击【xf-adsk2016】选择【以管理员身份运行】。<br>温馨提示<br>①运行【xf-adsk】前：先关闭“所有杀毒软件(部分电脑自带的“迈克菲”也要关闭）、防火墙、Windows Defender”，否则可能会被杀毒软件误杀无法运行。若已经没有该文件，需重新解压安装包。</p><p>19.生成激活码：①使用快捷键“Ctrl+C”复制【申请号】后的代码；②使用快捷键“Ctrl+V”将代码粘贴到【Request】后的框中；③点击【Patch】；④点击【确定】；⑤点击【Generate】生成激活码。</p><p>20.输入激活码：①使用快捷键“Ctrl+C”复制【Activation】后框中的激活码；②使用快捷键“Ctrl+V”将激活码粘贴到【激活码输入框】中；③点击【Quit】；④点击【下一步】。</p><p>21.激活成功，点击【完成】。</p><p>22.点击【确定】。</p><p>23.安装成功。</p><h2 id="软件调整"><a href="#软件调整" class="headerlink" title="软件调整"></a>软件调整</h2><h3 id="中文显示"><a href="#中文显示" class="headerlink" title="中文显示"></a>中文显示</h3><p>按下“Win键”在所有应用中即可找到简体中文版，直接打开即可得到中文版应用。</p><img src="https://baiyu1.oss-cn-hangzhou.aliyuncs.com/image-20231006174045699.png" alt="image-20231006174045699" style="zoom: 80%;" /><h3 id="字体显示调整"><a href="#字体显示调整" class="headerlink" title="字体显示调整"></a>字体显示调整</h3><p>3ds max 右键打开属性找到兼容性，如此设置即可</p><p><img src="https://baiyu1.oss-cn-hangzhou.aliyuncs.com/image-20231006174851266.png" alt="image-20231006174851266"></p><h1 id="3ds-Max软件使用"><a href="#3ds-Max软件使用" class="headerlink" title="3ds Max软件使用"></a>3ds Max软件使用</h1>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Windows系统安装以及软件推荐</title>
       <link href="/2023/10/06/Windows%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
       <url>/2023/10/06/Windows%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/</url>
@@ -91,6 +117,17 @@
     
     
     <entry>
+      <title>友链</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
@@ -102,9 +139,9 @@
     
     
     <entry>
-      <title>友链</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
+      <title>电影</title>
+      <link href="/movies/index.html"/>
+      <url>/movies/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -127,17 +164,6 @@
       <title>音乐</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>电影</title>
-      <link href="/movies/index.html"/>
-      <url>/movies/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
