@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>Windows系统安装</title>
+      <link href="/2023/10/06/Windows%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
+      <url>/2023/10/06/Windows%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/</url>
+      
+        <content type="html"><![CDATA[<h1 id="准备工具"><a href="#准备工具" class="headerlink" title="准备工具"></a>准备工具</h1><ul><li>一台准备安装系统的电脑</li><li>一台能联网的电脑（和上面的电脑可以是同一台）</li><li>一个空白的Ｕ盘（用来制作U盘启动系统）</li></ul><h1 id="制作U盘启动工具"><a href="#制作U盘启动工具" class="headerlink" title="制作Ｕ盘启动工具"></a>制作Ｕ盘启动工具</h1><p>想要安装系统首先需要制作Ｕ盘启动工具，这里推荐“微PE工具箱”。</p><p>首先在官网下载，<a href="https://www.wepe.com.cn/">微PE工具箱官网</a>下载对应版本并进行安装</p><p><strong>推荐教程</strong></p><ul><li><a href="https://mp.weixin.qq.com/s/kSFyJaO3KUznbzF8lT05iQ">PE系统安装教程 (qq.com)</a></li><li>微PE官方使用文档<a href="https://www.wepe.com.cn/ubook/">快速指引 | 微PE优盘使用说明书 (wepe.com.cn)</a></li></ul><blockquote><p><strong>这里附上其他U盘启动工具的官网</strong></p><ul><li><a href="http://www.winbaicai.com/">大白菜官网,大白菜winpe,大白菜U盘装系统, u盘启动盘制作工具 (winbaicai.com)</a></li><li><a href="https://www.laomaotao.net/">老毛桃winpe,u盘启动盘制作工具,u盘重装系统,老毛桃winpe下载 (laomaotao.net)</a></li><li><a href="https://www.hotpe.top/">HotPE - 一个纯净、强大、优雅的PE工具箱</a></li><li><a href="https://firpe.cn/page-247">FirPE 维护系统 – FirPE Project</a></li><li><a href="https://home.edgeless.top/">Edgeless-强大而优雅的半开源PE工具</a></li><li><a href="https://www.sysceo.com/software-softwarei-id-121.html">U盘魔术师v5(USMv5)(带ISO独立版)</a></li></ul></blockquote><h1 id="Windows系统下载"><a href="#Windows系统下载" class="headerlink" title="Windows系统下载"></a>Windows系统下载</h1><p>推荐在以下链接中下载<strong>原版Windows ISO镜像</strong></p><ul><li>MSDN下载（推荐）</li></ul><p><a href="https://msdn.itellyou.cn/">MSDN, 我告诉你 - 做一个安静的工具站 (itellyou.cn)</a></p><ul><li>微软官网下载</li></ul><p><a href="https://www.microsoft.com/zh-cn/software-download/windows11">Windows 11 (microsoft.com)</a></p><p><a href="https://www.microsoft.com/zh-cn/software-download/windows10"> Windows 10 (microsoft.com)</a></p><ul><li>MSDN的升级版</li></ul><p><a href="https://next.itellyou.cn/Identity/Account/Login?ReturnUrl=/Original/">itellyou.cn</a></p><ul><li>HelloWindows</li></ul><p><a href="https://hellowindows.cn/">HelloWindows.cn - 精校 完整 极致 Windows系统下载仓储站</a></p><ul><li>极简系统</li></ul><p><a href="https://www.sysmini.com/">极简系统-最纯净的系统下载平台 (sysmini.com)</a></p><h1 id="Windows系统安装"><a href="#Windows系统安装" class="headerlink" title="Windows系统安装"></a>Windows系统安装</h1><p>重启电脑，利用快捷键进入U盘PE系统，选择对应的Windows ISO镜像进行安装</p><p><a href="https://mp.weixin.qq.com/s/PAAvV2nxLwY8ywknM-Wa7w">使用微PE工具箱安装系统教程 (qq.com)</a></p><h1 id="Windows系统激活"><a href="#Windows系统激活" class="headerlink" title="Windows系统激活"></a>Windows系统激活</h1><p>下载这个网站的<a href="https://hellowindows.cn/">HelloWindows.cn - 精校 完整 极致 Windows系统下载仓储站</a>激活系统，可以对系统进行激活</p><blockquote><p><strong>其他网站推荐</strong></p><p><a href="http://www.aichunjing.com/">纯净版系统_Win10纯净版64位_纯净版XP系统-爱纯净官网 (aichunjing.com)</a></p><p>图吧工具箱中激活</p></blockquote><h1 id="Windows驱动下载"><a href="#Windows驱动下载" class="headerlink" title="Windows驱动下载"></a>Windows驱动下载</h1><p>此时电脑还需要驱动（连不了网络）</p><p>因此下载相应的驱动</p><p>这里推荐驱动精灵网卡版</p><p><a href="http://www.drivergenius.com/wangka/">万能网卡驱动版下载_驱动精灵 (drivergenius.com)</a></p><blockquote><p><strong>其他驱动推荐</strong></p><p><a href="http://dm.weishi.360.cn/home.html">360驱动大师</a>（这个也是很良心的）</p><p><a href="https://www.160.com/">驱动人生官网</a></p><p><a href="https://drivers.mydrivers.com/">驱动之家</a></p></blockquote><h1 id="推荐软件"><a href="#推荐软件" class="headerlink" title="推荐软件"></a>推荐软件</h1><p><a href="http://www.tbtool.cn/">图吧工具箱 - 最纯净的硬件工具箱 (tbtool.cn)</a></p><p><a href="https://www.snipaste.com/">Snipaste</a>（截图工具）</p><p><a href="https://yasuo.360.cn/index.html">360压缩</a></p><p><a href="http://www.potplayercn.com/">PotPlayer播放器</a></p><p><a href="https://www.voidtools.com/zh-cn/">Everything搜索</a></p><p><a href="https://www.360.cn/">360官网</a>（电脑小白推荐）</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo+Github搭建博客</title>
       <link href="/2023/10/05/Hexo+Github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
       <url>/2023/10/05/Hexo+Github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
@@ -89,17 +102,6 @@
     
     
     <entry>
-      <title>音乐</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>友链</title>
       <link href="/link/index.html"/>
       <url>/link/index.html</url>
@@ -114,6 +116,17 @@
       <title>电影</title>
       <link href="/movies/index.html"/>
       <url>/movies/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>音乐</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
